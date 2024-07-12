@@ -263,16 +263,19 @@ const Become = () => {
             padding: "20px",
           }}
         >
-          <p className="welcome-title">Become is now a Thriving Workplace!</p>
+          <p className="welcome-title">Become is NOW a Thriving Workplace!</p>
           <p className="welcome-content">
             <span>
-              Become has achieved a benchmark score of 75% across 6 levers,
-              highlighting our commitment to excellence. This achievement
-              reflects our dedication to fostering a supportive and engaging
-              work environment for all our employees.
+              Become has achieved a benchmark score of 75% across 6+ levers,
+              highlighting their commitment to excellence. This achievement
+              reflects their dedication to fostering a supportive and engaging
+              work environment for all their employees.
             </span>
             <br />
-            <span>We are honored to announce Become a Thriving Workplace.</span>
+            <span>
+              We are honored to announce Become, as a Thriving Workplace for the
+              year 2024-2025.
+            </span>
           </p>
         </div>
         {/* <div style={{ width: "80%" }}>
