@@ -12,7 +12,7 @@ const Certificate = () => {
       </div>
     );
   };
-  return <div>{certificate === "Become" ? <Become /> : <NotFound />}</div>;
+  return <div>{certificate === "Become-2024" ? <Become /> : <NotFound />}</div>;
 };
 
 export default Certificate;
