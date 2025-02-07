@@ -1,5 +1,7 @@
 import React from "react";
 import Become from "./Become";
+import Unicom from "./Unicom";
+
 import { useParams } from "react-router-dom";
 
 const Certificate = () => {
@@ -12,7 +14,18 @@ const Certificate = () => {
       </div>
     );
   };
-  return <div>{certificate === "Become-2024" ? <Become /> : <NotFound />}</div>;
+
+  if (certificate === "Become-2024") {
+    return (
+      <Become />
+    )
+  }
+  if (certificate === "Unicom-2025") {
+    return (
+      <Unicom />
+    )
+  }
+  return <div><NotFound /></div>;
 };
 
 export default Certificate;
