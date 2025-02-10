@@ -281,7 +281,7 @@ const Unicom = () => {
 
     return (
         <div className="flex w-full justify-center items-center bg-gradient-to-t from-[#0042A6] via-[#0064FF] to-[#0042A6] flex-col">
-            <div className="flex  w-full justify-between items-center mt-8 pl-[18%] pr-[18%]">
+            <div className="flex  w-full justify-between items-center mt-8 pl-[10%] pr-[18%]">
                 <img alt="twp-logo" className="w-40 h-auto" src={require("../assets/twp-logo.png")} />
                 <div className="flex justify-center items-center flex-row">
                     <p className="text-2xl text-white">You're <span className="font-bold">Certified</span></p>
@@ -291,13 +291,12 @@ const Unicom = () => {
 
             <div className="w-full mt-20 flex justify-between items-center pl-[18%] pr-[18%] -z-1">
 
-
                 <div>
                     {/* <img alt="certificate-badge" className="w-72 h-auto" src={require("../assets/badge.png")} /> */}
                 </div>
             </div>
 
-            <div style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center top 15px", backgroundRepeat: "no-repeat", height: '100%' }} className="relative z-50 w-[80%] flex justify-center items-center overflow-visible ">
+            <div style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center top 15px", backgroundRepeat: "no-repeat", height: "100%" }} className="relative z-50 w-[80%] flex justify-center items-center overflow-visible ">
                 {/* <img alt="path_line" src={require("../assets/path_line.png")} /> */}
                 <div className="w-full">
                     <div className="w-1/2">
@@ -310,11 +309,11 @@ const Unicom = () => {
                     <div className="flex justify-center items-center w-full mt-32">
                         <img alt="twp-elements" className="w-full h-auto" src={require("../assets/dec1.png")} />
                     </div>
-                    <div className="grid grid-cols-2 gap-72 w-[100%] mt-[10%] place-items-center z-10 rounded-3xl ">
+                    <div className="grid grid-cols-2 gap-48 w-full mt-[3%] place-items-center z-10 rounded-3xl ">
                         {leverdata.map((lever) => (
                             <div className="bg-white rounded-xl w-96 h-80 flex-col p-4">
-                                <div className="rounded-full border border-[#0064FF] w-32 h-32 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
-                                    <img alt="physiological_health_icon" className="w-24" src={require("../assets/physiological-health-icon.png")} />
+                                <div className="rounded-full border border-[#0064FF] w-24 h-24 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
+                                    <img alt="physiological_health_icon" className="w-16" src={require("../assets/physiological-health-icon.png")} />
                                 </div>
                                 <div className="flex justify-center items-center flex-col -mt-[20%]">
                                     <div className="flex w-40 h-40 justify-center items-center flex-col ">
