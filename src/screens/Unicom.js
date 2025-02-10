@@ -281,7 +281,7 @@ const Unicom = () => {
 
     return (
         <div className="flex w-full justify-center items-center bg-gradient-to-t from-[#0042A6] via-[#0064FF] to-[#0042A6] flex-col">
-            <div className="flex  w-full justify-between items-center mt-8 pl-[20%] pr-[20%]">
+            <div className="flex  w-full justify-between items-center mt-8 pl-[18%] pr-[18%]">
                 <img alt="twp-logo" className="w-40 h-auto" src={require("../assets/twp-logo.png")} />
                 <div className="flex justify-center items-center flex-row">
                     <p className="text-2xl text-white">You're <span className="font-bold">Certified</span></p>
@@ -289,7 +289,7 @@ const Unicom = () => {
                 </div>
             </div>
 
-            <div className="w-full mt-20 flex justify-between items-center pl-[20%] pr-[20%] -z-1">
+            <div className="w-full mt-20 flex justify-between items-center pl-[18%] pr-[18%] -z-1">
 
                 <div className="w-1/2">
                     <p className="text-4xl text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd. is NOW a Thriving Workplace!</p>
