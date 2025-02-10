@@ -291,21 +291,22 @@ const Unicom = () => {
 
             <div className="w-full mt-20 flex justify-between items-center pl-[18%] pr-[18%] -z-1">
 
-                <div className="w-1/2">
-                    <p className="text-4xl text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd. is NOW a Thriving Workplace!</p>
-                    <p className="text-white mt-5">We are super thrilled to honor <span className="text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd.</span> as a Thriving Workplace!</p>
-                    <p className="text-white mt-5">Unicom has shown an extraordinary commitment to building a workplace where people feel valued, supported, and inspired.</p>
-                    <p className="text-white">By focusing on the 10 Health Levers, Unicom Infotel Private Limited demonstrates the perfect balance of compassionate leadership and organizational excellence, building an environment that values both its people and its culture.</p>
-                    <p className="text-white">This recognition celebrates their dedication to creating an environment where employees can grow, succeed, and truly thrive.</p>
-                </div>
+
                 <div>
-                    <img alt="certificate-badge" className="w-72 h-auto" src={require("../assets/badge.png")} />
+                    {/* <img alt="certificate-badge" className="w-72 h-auto" src={require("../assets/badge.png")} /> */}
                 </div>
             </div>
 
             <div style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center top 15px", backgroundRepeat: "no-repeat", height: '100%' }} className="relative z-50 w-[80%] flex justify-center items-center overflow-visible ">
                 {/* <img alt="path_line" src={require("../assets/path_line.png")} /> */}
                 <div className="w-full">
+                    <div className="w-1/2">
+                        <p className="text-4xl text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd. is NOW a Thriving Workplace!</p>
+                        <p className="text-white mt-5">We are super thrilled to honor <span className="text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd.</span> as a Thriving Workplace!</p>
+                        <p className="text-white mt-5">Unicom has shown an extraordinary commitment to building a workplace where people feel valued, supported, and inspired.</p>
+                        <p className="text-white">By focusing on the 10 Health Levers, Unicom Infotel Private Limited demonstrates the perfect balance of compassionate leadership and organizational excellence, building an environment that values both its people and its culture.</p>
+                        <p className="text-white">This recognition celebrates their dedication to creating an environment where employees can grow, succeed, and truly thrive.</p>
+                    </div>
                     <div className="flex justify-center items-center w-full mt-32">
                         <img alt="twp-elements" className="w-full h-auto" src={require("../assets/dec1.png")} />
                     </div>
