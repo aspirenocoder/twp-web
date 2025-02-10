@@ -281,14 +281,16 @@ const Unicom = () => {
 
     return (
         <div className="flex w-full justify-center items-center bg-gradient-to-t from-[#0042A6] via-[#0064FF] to-[#0042A6] flex-col">
-            <div className="flex  w-full justify-around items-center mt-8">
+            <div className="flex  w-full justify-between items-center mt-8 pl-[20%] pr-[20%]">
                 <img alt="twp-logo" className="w-40 h-auto" src={require("../assets/twp-logo.png")} />
                 <div className="flex justify-center items-center flex-row">
                     <p className="text-2xl text-white">You're <span className="font-bold">Certified</span></p>
                     <img alt="paperplane" src={require("../assets/paperplane.png")} className="w-10 h-auto ml-2" />
                 </div>
             </div>
-            <div className="w-full mt-36 flex justify-around items-center">
+
+            <div className="w-full mt-20 flex justify-between items-center pl-[20%] pr-[20%] -z-1">
+
                 <div className="w-1/2">
                     <p className="text-4xl text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd. is NOW a Thriving Workplace!</p>
                     <p className="text-white mt-5">We are super thrilled to honor <span className="text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd.</span> as a Thriving Workplace!</p>
@@ -300,37 +302,40 @@ const Unicom = () => {
                     <img alt="certificate-badge" className="w-72 h-auto" src={require("../assets/badge.png")} />
                 </div>
             </div>
-            <div className="flex justify-center items-center w-full">
-                <img alt="twp-elements" className="w-[70%] h-auto" src={require("../assets/dec1.png")} />
-            </div>
-            <div style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center", backgroundRepeat: "no-repeat", height: '100%' }} className="z-10 w-[60%] -mt-[10%] flex justify-center items-center">
+
+            <div style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center top 10px", backgroundRepeat: "no-repeat", height: '100%' }} className="relative z-50 w-[75%] flex justify-center items-center overflow-visible ">
                 {/* <img alt="path_line" src={require("../assets/path_line.png")} /> */}
-                <div className="grid grid-cols-2 gap-8 w-[100%] mt-[10%] place-items-center z-10 rounded-3xl ">
-                    {leverdata.map((lever) => (
-                        <div className="bg-white rounded-xl w-96 h-80 flex-col p-4">
-                            <div className="rounded-full border border-[#0064FF] w-32 h-32 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
-                                <img alt="physiological_health_icon" className="w-24" src={require("../assets/physiological-health-icon.png")} />
-                            </div>
-                            <div className="flex justify-center items-center flex-col -mt-[20%]">
-                                <div className="flex w-40 h-40 justify-center items-center flex-col ">
-                                    <Doughnut className="" data={lever.data} options={options} />
+                <div className="w-full">
+                    <div className="flex justify-center items-center w-full mt-32">
+                        <img alt="twp-elements" className="w-full h-auto" src={require("../assets/dec1.png")} />
+                    </div>
+                    <div className="grid grid-cols-2 gap-72 w-[100%] mt-[10%] place-items-center z-10 rounded-3xl ">
+                        {leverdata.map((lever) => (
+                            <div className="bg-white rounded-xl w-96 h-80 flex-col p-4">
+                                <div className="rounded-full border border-[#0064FF] w-32 h-32 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
+                                    <img alt="physiological_health_icon" className="w-24" src={require("../assets/physiological-health-icon.png")} />
                                 </div>
-                                <p className="font-bold text-2xl text-center mt-3">{lever.name}</p>
-                                <p>{lever.desc}</p>
+                                <div className="flex justify-center items-center flex-col -mt-[20%]">
+                                    <div className="flex w-40 h-40 justify-center items-center flex-col ">
+                                        <Doughnut className="" data={lever.data} options={options} />
+                                    </div>
+                                    <p className="font-bold text-2xl text-center mt-3">{lever.name}</p>
+                                    <p>{lever.desc}</p>
 
+                                </div>
                             </div>
-                        </div>
-                    ))}
+                        ))}
 
+                    </div>
                 </div>
             </div>
-            <div className="flex flex-row justify-evenly items-center mt-5 z-10">
-                <img alt="people1" className="w-[40%]" src={require("../assets/people1.png")} />
-                <div>
+            <div className="flex flex-row justify-between items-center mt-[7%] z-10">
+                <img alt="people1" className="w-[30%]" src={require("../assets/people1.png")} />
+                <div className="w-[20%]">
                     <p className="text-2xl text-white text-center">Do you still measure engagement, satisfaction & culture? <span className="text-[#FFE70B] font-bold">Go beyond engagement.</span></p>
                     <p className="text-2xl text-white font-bold text-center">Take the Thriving Approach.</p>
                 </div>
-                <img alt="people2" className="w-[40%]" src={require("../assets/people2.png")} />
+                <img alt="people2" className="w-[30%]" src={require("../assets/people2.png")} />
             </div>
             <div className="w-full -mt-[10%]">
                 <img alt="people-line" src={require("../assets/people-line.png")} />
@@ -339,7 +344,7 @@ const Unicom = () => {
                 <div className="bg-gradient-to-t from-[#FFE501] to-[#FEF073] p-3 rounded-lg font-semibold cursor-pointer">
                     <p>Visit Our Website</p>
                 </div>
-                <p className="text-white font-semibold mt-3 text-xl">Make your organizing a Thriving workplace</p>
+                <p className="text-white font-semibold mt-3 text-xl">Make your organization a Thriving workplace</p>
             </div>
             <div className="w-full flex justify-center items-center flex-col mt-11">
                 <div className="w-[70%] bg-white rounded-xl flex justify-around items-center pt-5 pb-5 mb-10">
