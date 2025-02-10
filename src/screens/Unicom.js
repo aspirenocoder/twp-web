@@ -321,11 +321,11 @@ const Unicom = () => {
                     </div>
                     <div className="grid grid-cols-2 gap-48 w-full mt-[3%] place-items-center z-10 rounded-3xl ">
                         {leverdata.map((lever) => (
-                            <div className="bg-white rounded-xl w-96 h-80 flex-col p-4">
+                            <div className="bg-white rounded-xl w-96 h-[22rem] flex-col p-7">
                                 <div className="rounded-full border border-[#0064FF] w-24 h-24 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
                                     <img alt="physiological_health_icon" className="w-16" src={lever.icon} />
                                 </div>
-                                <div className="flex justify-center items-center flex-col -mt-[10%]">
+                                <div className="flex justify-center items-center flex-col -mt-[15%]">
                                     <div className="flex w-40 h-40 justify-center items-center flex-col ">
                                         <Doughnut className="" data={lever.data} options={options} />
                                     </div>
@@ -351,9 +351,9 @@ const Unicom = () => {
                 <img alt="people-line" src={require("../assets/people-line.png")} />
             </div>
             <div className="w-full flex justify-center items-center flex-col">
-                <div className="bg-gradient-to-t from-[#FFE501] to-[#FEF073] p-3 rounded-lg font-semibold cursor-pointer">
+                <a target="_blank" href="https://www.thrivingworkplace.in" className="bg-gradient-to-t from-[#FFE501] to-[#FEF073] p-3 rounded-lg font-semibold cursor-pointer">
                     <p>Visit Our Website</p>
-                </div>
+                </a>
                 <p className="text-white font-semibold mt-3 text-xl">Make your organization a Thriving workplace</p>
             </div>
             <div className="w-full flex justify-center items-center flex-col mt-11">
