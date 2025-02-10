@@ -303,7 +303,7 @@ const Unicom = () => {
                 </div>
             </div>
 
-            <div style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center top 15px", backgroundRepeat: "no-repeat", height: '100%' }} className="relative z-50 w-[78%] flex justify-center items-center overflow-visible ">
+            <div style={{ backgroundImage: `url(${bgImage})`, backgroundSize: "cover", backgroundPosition: "center top 15px", backgroundRepeat: "no-repeat", height: '100%' }} className="relative z-50 w-[65%] flex justify-center items-center overflow-visible ">
                 {/* <img alt="path_line" src={require("../assets/path_line.png")} /> */}
                 <div className="w-full">
                     <div className="flex justify-center items-center w-full mt-32">
