@@ -48,6 +48,7 @@ const Unicom = () => {
         {
             name: "Physiological Health",
             desc: "assesses if people take up an active role in enhancing their physical well-being for optimal performance and productivity",
+            icon: require("../assets/physiological-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
@@ -68,6 +69,7 @@ const Unicom = () => {
         {
             name: "Social Health",
             desc: "assesses if people take up an active role in enhancing their physical well-being for optimal performance and productivity",
+            icon: require("../assets/social-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
@@ -88,11 +90,12 @@ const Unicom = () => {
         {
             name: "Career Health",
             desc: "evaluates professional nurturing within the organization and provides overall security, ensuring not just job stability but a promising career",
+            icon: require("../assets/career-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [76, 100 - 76],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -108,11 +111,12 @@ const Unicom = () => {
         {
             name: "Financial Health",
             desc: "examines employees' financial awareness of the status quo and efforts towards economic stability",
+            icon: require("../assets/financial-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [56, 100 - 56],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -128,11 +132,12 @@ const Unicom = () => {
         {
             name: "Culture Health",
             desc: "explores how the practices and values followed are unique, bragworthy, and effective in crafting a great experience",
+            icon: require("../assets/cultural-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [80, 100 - 80],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -148,11 +153,12 @@ const Unicom = () => {
         {
             name: "Mental Health",
             desc: "examines if the workplace fosters emotional safety, ease of expression, and satisfaction for robust mental health",
+            icon: require("../assets/mental-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [73, 100 - 73],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -168,11 +174,12 @@ const Unicom = () => {
         {
             name: "Intellectual Health",
             desc: "indicates the level of synergy in the area to become a dynamic learning and innovative environment",
+            icon: require("../assets/intellectual-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [81, 100 - 81],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -188,11 +195,12 @@ const Unicom = () => {
         {
             name: "Tech & Digital Health",
             desc: "indicates how well the organization has adopted Data & Technology to be a faster, better and a smarter workplace",
+            icon: require("../assets/digital-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [87, 100 - 87],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -209,11 +217,12 @@ const Unicom = () => {
         {
             name: "Business Health",
             desc: "understands the perceived organizational value through brand resonance, leadership and impact creation",
+            icon: require("../assets/business-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [83, 100 - 83],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -229,11 +238,12 @@ const Unicom = () => {
         {
             name: "Spiritual Health",
             desc: "assesses the alignment of individual purpose and their inclination to a larger societal mission",
+            icon: require("../assets/spiritual-health-icon.png"),
             data: {
                 labels: [],
                 datasets: [
                     {
-                        data: [77, 100 - 77],
+                        data: [79, 100 - 79],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -313,9 +323,9 @@ const Unicom = () => {
                         {leverdata.map((lever) => (
                             <div className="bg-white rounded-xl w-96 h-80 flex-col p-4">
                                 <div className="rounded-full border border-[#0064FF] w-24 h-24 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
-                                    <img alt="physiological_health_icon" className="w-16" src={require("../assets/physiological-health-icon.png")} />
+                                    <img alt="physiological_health_icon" className="w-16" src={lever.icon} />
                                 </div>
-                                <div className="flex justify-center items-center flex-col -mt-[20%]">
+                                <div className="flex justify-center items-center flex-col -mt-[10%]">
                                     <div className="flex w-40 h-40 justify-center items-center flex-col ">
                                         <Doughnut className="" data={lever.data} options={options} />
                                     </div>
