@@ -15,12 +15,12 @@ const Certificate = () => {
     );
   };
 
-  if (certificate === "become-2024") {
+  if (certificate === "become-2024" || certificate === "Become-2024") {
     return (
       <Become />
     )
   }
-  if (certificate === "unicom-2025") {
+  if (certificate === "unicom-2025" || certificate === "Unicom-2025") {
     return (
       <Unicom />
     )
