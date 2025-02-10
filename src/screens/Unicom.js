@@ -24,7 +24,8 @@ const Unicom = () => {
         id: "percentagePlugin",
         beforeDraw: (chart) => {
             const { ctx, chartArea } = chart;
-            const percentage = Math.round(progress); // Get the current progress percentage
+            const dataset = chart.config.data.datasets[0].data;
+            const percentage = dataset[0];
             const fontSize = 40;
 
             // Set text color and style
@@ -49,16 +50,20 @@ const Unicom = () => {
             name: "Physiological Health",
             desc: "assesses if people take up an active role in enhancing their physical well-being for optimal performance and productivity",
             icon: require("../assets/physiological-health-icon.png"),
+
             data: {
                 labels: [],
                 datasets: [
                     {
                         data: [77, 100 - 77],
                         backgroundColor: (context) => {
-                            const { ctx } = context.chart;
+                            const { chart } = context;
+                            const ctx = chart.ctx;
+                            // const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -68,8 +73,9 @@ const Unicom = () => {
         },
         {
             name: "Social Health",
-            desc: "assesses if people take up an active role in enhancing their physical well-being for optimal performance and productivity",
+            desc: "assesses the sense of supportiveness, belongingness, and collaboration within the organizational fabric",
             icon: require("../assets/social-health-icon.png"),
+
             data: {
                 labels: [],
                 datasets: [
@@ -78,8 +84,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -99,8 +106,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -120,8 +128,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -141,8 +150,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -162,8 +172,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -183,8 +194,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -204,8 +216,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -226,8 +239,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -247,8 +261,9 @@ const Unicom = () => {
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
-                                "#C3DBFF",
                                 createGradient(ctx),
+                                "#C3DBFF",
+
                             ];
                         },
                         borderWidth: 0,
@@ -319,22 +334,26 @@ const Unicom = () => {
                     <div className="flex justify-center items-center w-full mt-32">
                         <img alt="twp-elements" className="w-full h-auto" src={require("../assets/dec1.png")} />
                     </div>
-                    <div className="grid grid-cols-2 gap-48 w-full mt-[3%] place-items-center z-10 rounded-3xl ">
-                        {leverdata.map((lever) => (
-                            <div className="bg-white rounded-xl w-96 h-[22rem] flex-col p-7">
-                                <div className="rounded-full border border-[#0064FF] w-24 h-24 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
-                                    <img alt="physiological_health_icon" className="w-16" src={lever.icon} />
-                                </div>
-                                <div className="flex justify-center items-center flex-col -mt-[15%]">
-                                    <div className="flex w-40 h-40 justify-center items-center flex-col ">
-                                        <Doughnut className="" data={lever.data} options={options} />
-                                    </div>
-                                    <p className="font-bold text-2xl text-center mt-3">{lever.name}</p>
-                                    <p>{lever.desc}</p>
+                    <div className="grid grid-cols-2 gap-40 w-full mt-[3%] place-items-center z-10 rounded-3xl ">
+                        {leverdata.map((lever) => {
 
+
+                            return (
+                                <div className="bg-white rounded-xl w-96 h-[22rem] flex-col p-7">
+                                    <div className="rounded-full border border-[#0064FF] w-24 h-24 -ml-12 -mt-12 bg-white flex justify-center items-center shadow-lg shadow-white">
+                                        <img alt="physiological_health_icon" className="w-16" src={lever.icon} />
+                                    </div>
+                                    <div className="flex justify-center items-center flex-col -mt-[15%]">
+                                        <div className="flex w-40 h-40 justify-center items-center flex-col ">
+                                            <Doughnut data={lever.data} options={options} />
+                                        </div>
+                                        <p className="font-bold text-2xl text-center mt-3">{lever.name}</p>
+                                        <p>{lever.desc}</p>
+
+                                    </div>
                                 </div>
-                            </div>
-                        ))}
+                            )
+                        })}
 
                     </div>
                 </div>
