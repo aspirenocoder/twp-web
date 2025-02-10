@@ -290,10 +290,11 @@ const Unicom = () => {
             </div>
             <div className="w-full mt-36 flex justify-around items-center">
                 <div className="w-1/2">
-                    <p className="text-4xl text-[#FFED4E] font-bold">Unicom is NOW a Thriving Workplace!</p>
-                    <p className="text-white mt-5">We are honoured to recognize Unicom as a Thriving Workplace fot he year 2024-2025!</p>
-                    <p className="text-white mt-5">Unicom has shown a heartfelt commitment to building a workplace where people feel valued, supported, and inspired. This recognition celebrates their dedication to creating an environment where employees can grow, succeed, and truly thrive. </p>
-                    <p className="text-white">By focusing on the 10 Health Levers , Unicom has set a shining example of what it means to care for people while driving shared success. Their compassionate leadership fosters a sense of belonging, purpose, and unity that empowers everyone to do their best</p>
+                    <p className="text-4xl text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd. is NOW a Thriving Workplace!</p>
+                    <p className="text-white mt-5">We are super thrilled to honor <span className="text-[#FFED4E] font-bold">Unicom Infotel Pvt. Ltd.</span> as a Thriving Workplace!</p>
+                    <p className="text-white mt-5">Unicom has shown an extraordinary commitment to building a workplace where people feel valued, supported, and inspired.</p>
+                    <p className="text-white">By focusing on the 10 Health Levers, Unicom Infotel Private Limited demonstrates the perfect balance of compassionate leadership and organizational excellence, building an environment that values both its people and its culture.</p>
+                    <p className="text-white">This recognition celebrates their dedication to creating an environment where employees can grow, succeed, and truly thrive.</p>
                 </div>
                 <div>
                     <img alt="certificate-badge" className="w-72 h-auto" src={require("../assets/badge.png")} />
