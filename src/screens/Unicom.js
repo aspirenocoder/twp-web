@@ -355,7 +355,7 @@ const Unicom = () => {
                         <div className="mt-10 flex justify-center items-center flex-row">
                             <input placeholder="| Enter your business email" className="rounded-l-lg border border-r-transparent border-[#0042A6] p-2" />
                             <div className="bg-gradient-to-t from-[#FFE501] to-[#FEF073] p-3 rounded-lg font-semibold cursor-pointer">
-                                <p>Visit Our Website</p>
+                                <p>Get Certified Today</p>
                             </div>
                         </div>
                     </div>
