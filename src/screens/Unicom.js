@@ -295,7 +295,7 @@ const Unicom = () => {
                 borderRadius: (context) => {
                     // Apply borderRadius only for the active progress bar
                     const { datasetIndex, index } = context;
-                    if (datasetIndex === 0 && index === 1) {
+                    if (datasetIndex === 0 && index === 0) {
                         return 50; // Apply rounded corners to the active (progress) bar
                     }
                     return 0; // No rounded corners for the background (remaining) bar
