@@ -338,7 +338,7 @@ const Unicom = () => {
                 </div>
                 <img alt="people2" className="w-[30%]" src={require("../assets/people2.png")} />
             </div>
-            <div className="w-full -mt-[10%]">
+            <div className="w-full">
                 <img alt="people-line" src={require("../assets/people-line.png")} />
             </div>
             <div className="w-full flex justify-center items-center flex-col">
