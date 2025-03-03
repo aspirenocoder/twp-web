@@ -45,6 +45,25 @@ const Unicom = () => {
 
     Chart.register(percentagePlugin);
 
+    const overall = {
+        labels: [],
+        datasets: [
+            {
+                data: [79, 100 - 79],
+                backgroundColor: (context) => {
+                    const { ctx } = context.chart;
+                    return [
+                        createGradient(ctx),
+                        "#C3DBFF",
+
+                    ];
+                },
+                borderWidth: 0,
+            },
+        ],
+    }
+
+
     const leverdata = [
         {
             name: "Physiological Health",
@@ -116,28 +135,28 @@ const Unicom = () => {
                 ],
             },
         },
-        {
-            name: "Financial Health",
-            desc: "examines employees' financial awareness of the status quo and efforts towards economic stability",
-            icon: require("../assets/financial-health-icon.png"),
-            data: {
-                labels: [],
-                datasets: [
-                    {
-                        data: [56, 100 - 56],
-                        backgroundColor: (context) => {
-                            const { ctx } = context.chart;
-                            return [
-                                createGradient(ctx),
-                                "#C3DBFF",
+        // {
+        //     name: "Financial Health",
+        //     desc: "examines employees' financial awareness of the status quo and efforts towards economic stability",
+        //     icon: require("../assets/financial-health-icon.png"),
+        //     data: {
+        //         labels: [],
+        //         datasets: [
+        //             {
+        //                 data: [56, 100 - 56],
+        //                 backgroundColor: (context) => {
+        //                     const { ctx } = context.chart;
+        //                     return [
+        //                         createGradient(ctx),
+        //                         "#C3DBFF",
 
-                            ];
-                        },
-                        borderWidth: 0,
-                    },
-                ],
-            },
-        },
+        //                     ];
+        //                 },
+        //                 borderWidth: 0,
+        //             },
+        //         ],
+        //     },
+        // },
         {
             name: "Culture Health",
             desc: "explores how the practices and values followed are unique, bragworthy, and effective in crafting a great experience",
@@ -160,28 +179,28 @@ const Unicom = () => {
                 ],
             },
         },
-        {
-            name: "Mental Health",
-            desc: "examines if the workplace fosters emotional safety, ease of expression, and satisfaction for robust mental health",
-            icon: require("../assets/mental-health-icon.png"),
-            data: {
-                labels: [],
-                datasets: [
-                    {
-                        data: [73, 100 - 73],
-                        backgroundColor: (context) => {
-                            const { ctx } = context.chart;
-                            return [
-                                createGradient(ctx),
-                                "#C3DBFF",
+        // {
+        //     name: "Mental Health",
+        //     desc: "examines if the workplace fosters emotional safety, ease of expression, and satisfaction for robust mental health",
+        //     icon: require("../assets/mental-health-icon.png"),
+        //     data: {
+        //         labels: [],
+        //         datasets: [
+        //             {
+        //                 data: [73, 100 - 73],
+        //                 backgroundColor: (context) => {
+        //                     const { ctx } = context.chart;
+        //                     return [
+        //                         createGradient(ctx),
+        //                         "#C3DBFF",
 
-                            ];
-                        },
-                        borderWidth: 0,
-                    },
-                ],
-            },
-        },
+        //                     ];
+        //                 },
+        //                 borderWidth: 0,
+        //             },
+        //         ],
+        //     },
+        // },
         {
             name: "Intellectual Health",
             desc: "indicates the level of synergy in the area to become a dynamic learning and innovative environment",
@@ -334,7 +353,21 @@ const Unicom = () => {
                     <div className="flex justify-center items-center w-full mt-32">
                         <img alt="twp-elements" className="w-full h-auto" src={require("../assets/dec1.png")} />
                     </div>
-                    <div className="grid grid-cols-2 gap-40 w-full mt-[3%] place-items-center z-10 rounded-3xl ">
+                    {/* <div className="flex justify-center items-center w-full">
+                        <div className="flex justify-center items-center bg-white rounded-xl p-4 mt-[15%] w-[65vw] flex-row">
+                            <div>
+                                <Doughnut data={overall} options={options} />
+
+                            </div>
+                            <div className="ml-4">
+                                <p className="text-black font-semibold text-3xl">Unicom result</p>
+                                <p>The Overall Thrive Score for Unicom reflects the organization’s collective well-being, engagement, and effectiveness across key workplace health levers. This score provides a comprehensive measure of how well Unicom supports its employees in achieving a balanced, productive, and fulfilling work experience.</p>
+                                <p>Unicom excels in multiple dimensions, this reflects a workplace that nurtures holistic growth, fosters innovation, encourages meaningful connections, and provides strong career pathways. By sustaining these strengths, Unicom continues to create an environment where employees thrive both personally and professionally.</p>
+                            </div>
+                        </div>
+                    </div> */}
+
+                    <div className="grid grid-cols-2 gap-40 w-full mt-[60%] place-items-center z-10 rounded-3xl ">
                         {leverdata.map((lever) => {
 
 
