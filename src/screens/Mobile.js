@@ -19,7 +19,7 @@ const Mobile = () => {
             />
 
             <p style={{ textAlign: "center" }}>
-                Please open this platform in desktop
+                Please open the certification page in desktop
             </p>
         </div>
     );
