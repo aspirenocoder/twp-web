@@ -1,7 +1,7 @@
 import React from "react";
 import Become from "./Become";
 import Become1 from "./Become1";
-
+import Aspire from "./Aspire";
 import Unicom from "./Unicom";
 
 import { useParams } from "react-router-dom";
@@ -25,6 +25,11 @@ const Certificate = () => {
   if (certificate === "unicom-2025" || certificate === "Unicom-2025") {
     return (
       <Unicom />
+    )
+  }
+  if (certificate === "aspire-2025" || certificate === "Aspire-2025") {
+    return (
+      <Aspire />
     )
   }
   return <div><NotFound /></div>;
