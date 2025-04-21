@@ -3,6 +3,7 @@ import Become from "./Become";
 import Become1 from "./Become1";
 import Aspire from "./Aspire";
 import Unicom from "./Unicom";
+import MentorCloud from "./MentorCloud";
 
 import { useParams } from "react-router-dom";
 
@@ -30,6 +31,11 @@ const Certificate = () => {
   if (certificate === "aspire-2025" || certificate === "Aspire-2025") {
     return (
       <Aspire />
+    )
+  }
+  if (certificate === "mentorcloud-2025" || certificate === "MentorCloud-2025") {
+    return (
+      <MentorCloud />
     )
   }
   return <div><NotFound /></div>;
