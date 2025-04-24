@@ -145,28 +145,28 @@ const MentorCloud = () => {
                 ],
             },
         },
-        // {
-        //     name: "Financial Health",
-        //     desc: "examines employees' financial awareness of the status quo and efforts towards economic stability",
-        //     icon: require("../assets/financial-health-icon.png"),
-        //     data: {
-        //         labels: [],
-        //         datasets: [
-        //             {
-        //                 data: [56, 100 - 56],
-        //                 backgroundColor: (context) => {
-        //                     const { ctx } = context.chart;
-        //                     return [
-        //                         createGradient(ctx),
-        //                         "#C3DBFF",
+        {
+            name: "Financial Health",
+            desc: "examines employees' financial awareness of the status quo and efforts towards economic stability",
+            icon: require("../assets/financial-health-icon.png"),
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        data: [60, 100 - 60],
+                        backgroundColor: (context) => {
+                            const { ctx } = context.chart;
+                            return [
+                                createGradient(ctx),
+                                "#C3DBFF",
 
-        //                     ];
-        //                 },
-        //                 borderWidth: 0,
-        //             },
-        //         ],
-        //     },
-        // },
+                            ];
+                        },
+                        borderWidth: 0,
+                    },
+                ],
+            },
+        },
         {
             name: "Culture Health",
             desc: "explores how the practices and values followed are unique, bragworthy, and effective in crafting a great experience",
@@ -189,28 +189,28 @@ const MentorCloud = () => {
                 ],
             },
         },
-        // {
-        //     name: "Mental Health",
-        //     desc: "examines if the workplace fosters emotional safety, ease of expression, and satisfaction for robust mental health",
-        //     icon: require("../assets/mental-health-icon.png"),
-        //     data: {
-        //         labels: [],
-        //         datasets: [
-        //             {
-        //                 data: [73, 100 - 73],
-        //                 backgroundColor: (context) => {
-        //                     const { ctx } = context.chart;
-        //                     return [
-        //                         createGradient(ctx),
-        //                         "#C3DBFF",
+        {
+            name: "Mental Health",
+            desc: "examines if the workplace fosters emotional safety, ease of expression, and satisfaction for robust mental health",
+            icon: require("../assets/mental-health-icon.png"),
+            data: {
+                labels: [],
+                datasets: [
+                    {
+                        data: [69, 100 - 69],
+                        backgroundColor: (context) => {
+                            const { ctx } = context.chart;
+                            return [
+                                createGradient(ctx),
+                                "#C3DBFF",
 
-        //                     ];
-        //                 },
-        //                 borderWidth: 0,
-        //             },
-        //         ],
-        //     },
-        // },
+                            ];
+                        },
+                        borderWidth: 0,
+                    },
+                ],
+            },
+        },
         {
             name: "Intellectual Health",
             desc: "indicates the level of synergy in the area to become a dynamic learning and innovative environment",
