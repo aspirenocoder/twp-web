@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import TWP from "./screens/TWP";
 import Certificate from "./screens/Certificate";
+import Clarity from '@microsoft/clarity';
+Clarity.init("rg8ohmbcuu");
 
 const App = () => {
   return (
