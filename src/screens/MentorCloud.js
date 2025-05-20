@@ -153,7 +153,7 @@ const MentorCloud = () => {
                 labels: [],
                 datasets: [
                     {
-                        data: [60, 100 - 60],
+                        data: [51, 100 - 51],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
@@ -168,7 +168,7 @@ const MentorCloud = () => {
             },
         },
         {
-            name: "Culture Health",
+            name: "Cultural Health",
             desc: "explores how the practices and values followed are unique, bragworthy, and effective in crafting a great experience",
             icon: require("../assets/cultural-health-icon.png"),
             data: {
@@ -197,7 +197,7 @@ const MentorCloud = () => {
                 labels: [],
                 datasets: [
                     {
-                        data: [69, 100 - 69],
+                        data: [76, 100 - 76],
                         backgroundColor: (context) => {
                             const { ctx } = context.chart;
                             return [
